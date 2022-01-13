@@ -1,0 +1,20 @@
+<h3>These are the Astronauts</h3>
+
+<div class="astronauts">
+  <p>
+    <% @astronauts.each do |astronaut| %>
+      <%= astronaut.name %>
+      <%= astronaut.age %>
+      <%= astronaut.job %>
+    <% end %>
+  </p>
+
+  <p>Average age: <%= Astronaut.average_age %></p>
+
+<div class="missions">
+  <% @missions.each do |mission| %>
+    <%= mission.title %>
+  <% end %>
+</div>
+
+</div>
